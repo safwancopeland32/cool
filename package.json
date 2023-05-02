@@ -27,5 +27,15 @@
     "singleQuote": true,
     "trailingComma": "all",
     "printWidth": 80
+  },
+  "vercel": {
+    "build": {
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      },
+      "src": "./apps/frontend",
+      "command": "npm run build",
+      "output": "public"
+    }
   }
 }
