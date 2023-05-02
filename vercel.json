@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "entrypoint": "scripts/start.js"
+      }
+    },
+    {
+      "src": "apps/frontend/vite.config.js",
+      "use": "@vitejs/adapter-vercel"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}

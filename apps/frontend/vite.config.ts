@@ -1,3 +1,5 @@
+typescript
+Copy code
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as dotenv from 'dotenv';
@@ -14,4 +16,6 @@ export default defineConfig({
   define: {
     'process.env': process.env,
   },
+  base: '/',
+  publicDir: 'assets',
 });

@@ -35,3 +35,4 @@ yarn-error.log*
 # auto-gpt-webui
 .ignore
 /auto-gpt*
+.vercel

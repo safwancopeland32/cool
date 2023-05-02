@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "setup-auto-gpt": "bash scripts/setup-auto-gpt.sh",
-    "build": "turbo run build",
+    "build": "turbo run build --scope=frontend",
     "start": "turbo run start",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md,py,json}\"",
